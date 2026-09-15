@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Conduta</title>
+<link rel="icon" type="image/png" href="../cord.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#000000;
+    --surface:#0D0D0D;
+    --text:#FFFFFF;
+    --muted:#9A9A9A;
+    --line:rgba(255,255,255,0.16);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:-0.01em;margin:0;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px;}
+
+  header{padding:28px 0;border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand img{height:20px;width:auto;}
+  .brand span{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.02rem;}
+
+  main{padding:80px 0 100px;}
+  .kicker{color:var(--muted);font-size:0.92rem;margin-bottom:16px;}
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);max-width:16ch;}
+  main > .wrap > p.lede{margin-top:18px;color:var(--muted);font-size:1.02rem;max-width:46ch;}
+
+  .choice-grid{
+    margin-top:48px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  @media(max-width:620px){.choice-grid{grid-template-columns:1fr;}}
+  .choice-card{
+    background:var(--ink);
+    padding:36px 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:28px;
+    min-height:200px;
+    transition:background .15s ease;
+  }
+  .choice-card:hover{background:var(--surface);}
+  .choice-card h2{font-size:1.2rem;}
+  .choice-card p{color:var(--muted);font-size:0.92rem;margin-top:10px;}
+  .choice-arrow{
+    align-self:flex-start;
+    font-family:'Space Grotesk',sans-serif;
+    font-size:0.9rem;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .choice-arrow svg{width:16px;height:16px;}
+
+  footer{border-top:1px solid var(--line);padding:24px 0;font-size:0.85rem;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap brand">
+    <a href="../index.html" class="brand">
+      <img src="../cord.png" alt="Logo da Cord">
+      <span>Cord</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="kicker">documentos legais</div>
+    <h1>Termos e privacidade</h1>
+    <p class="lede">Escolha o documento que você quer consultar.</p>
+
+    <div class="choice-grid">
+      <a class="choice-card" href="termos.html">
+        <div>
+          <h2>Termos de Serviço</h2>
+          <p>Como a contratação, o pagamento e a entrega dos projetos da Cord funcionam.</p>
+        </div>
+        <span class="choice-arrow">
+          Ler os termos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+      <a class="choice-card" href="privacidade.html">
+        <div>
+          <h2>Política de Privacidade</h2>
+          <p>Quais dados a Cord coleta, para que servem e como você pode gerenciá-los.</p>
+        </div>
+        <span class="choice-arrow">
+          Ler a política
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Cord, Grupo Ticord</div>
+</footer>
+
+</body>
+</html>
